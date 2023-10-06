@@ -1,4 +1,49 @@
+@font-face {
+  font-family: TT Lakes Regular;
+  src: url('./TTLakes-Regular.ttf');
+}
+
+* {margin: 0;padding: 0;}
+
+body {font-family: TT Lakes Regular;}
+
+
+header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background: linear-gradient(45deg, #F8F8F8, rgb(255, 255, 255));
+}
+
+p {
+  max-width: 80%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  
+}
+
 .swiper {
-    width: 600px;
-    height: 300px;
+    max-width: 320px;
+    height: 234px;
+    background-color: #F8F8F8;
   }
+
+  .swiper-wrapper {
+    
+    display: flex;
+    align-items: center;
+    width: 320px;
+    height: 72px;
+    
+  }
+
+  .swiper-slide {
+    box-sizing: border-box;
+    border: 1px solid rgb(216, 210, 210);
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 0 5px;
+
+  }
+
+  
