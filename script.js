@@ -1,10 +1,12 @@
-const slidesContent = document.getElementsByClassName("swiper-slide");
+const slidesContent = document.getElementsByClassName("slide");
 
 const arraySlidesContent = Array.from(slidesContent);
 
+const swiper1 = document.getElementsByClassName('.swiper');
+
 //slides styles
 
-const styles =  {'display': 'flex','justify-content': 'space-around','align-items': 'center','max-width':'204px','height':'72px'}
+
 
 //slides
 
@@ -18,8 +20,7 @@ const svgArray = ['./assets/1.png','./assets/2.png','./assets/3.png','./assets/4
 ,'./assets/6.png','./assets/7.png','./assets/8.png','./assets/9.png','./assets/10.png','./assets/11.png']
 
 const updatedContnt = arraySlidesContent.map((item,i)=>{
-   
-    Object.assign(item.style, styles);
+
     item.innerHTML = `<img src='${svgArray[i]}'></img> ${commonSvg}`
     return item
 })
