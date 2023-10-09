@@ -7,14 +7,13 @@
 
 body {font-family: TT Lakes Regular;}
 
-
 .brands-container__button {
+  display: none;
   background: transparent;
   border: transparent;
   margin: 5px 0 0 10px;
   padding: 10px 0 10px 0;
 }
-
 
 .brands-container {
   margin: 0 auto;
@@ -22,8 +21,6 @@ body {font-family: TT Lakes Regular;}
   background-color: #F8F8F8;
   height: fit-content;
 }
-
-
 
 .brands-container__header {
   width: 100%;
@@ -46,7 +43,6 @@ body {font-family: TT Lakes Regular;}
   
 }
 
-
 .brands-container .swiper .swiper-slide {
 height: 72px;
 width: 240px;
@@ -68,6 +64,8 @@ width: 240px;
   background-color: rgb(163, 161, 161);
 }
 
+.swiper-pagination {display: none;}
+
 @media(width<=320px) {
   .brands-container .swiper {
     max-width: 310px;
@@ -77,7 +75,10 @@ width: 240px;
   .swiper .swiper-wrapper {
     height: 110px;
   }
+
   .brands-container__button {display: none;}
+
+  .swiper-pagination {display: block;}
 }
 
 @media(width >= 768px) {
@@ -95,7 +96,10 @@ width: 240px;
     height: 200px;
   }
 
-  
+  .brands-container__button {
+    display: block;
+  }
+
 }
 
 @media(width >= 1120px) {
@@ -109,8 +113,8 @@ width: 240px;
     max-width: 96%; 
   }
 
-  button {
-    display:'';
+  .brands-container__button {
+    display: block;
   }
 }
 
