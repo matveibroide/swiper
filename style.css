@@ -64,9 +64,10 @@ width: 240px;
   background-color: rgb(163, 161, 161);
 }
 
-.swiper-pagination {display: none;}
+
 
 @media(width<=320px) {
+
   .brands-container .swiper {
     max-width: 310px;
     margin-left:10px;
@@ -90,6 +91,11 @@ width: 240px;
     height: fit-content;
   }
 
+  .brands-container__header__item {
+    text-align: left;
+    width: 100%;
+    margin-right: 5%;
+  }
   
   .brands-container .swiper {
     width: 92%; 
@@ -100,6 +106,8 @@ width: 240px;
     display: block;
   }
 
+  .swiper-pagination {display: none;}
+
 }
 
 @media(width >= 1120px) {
@@ -109,6 +117,12 @@ width: 240px;
     height: fit-content;
   }
 
+  .brands-container__header__item {
+    text-align: left;
+    width: 100%;
+    margin-right: 5%;
+  }
+
   .brands-container .swiper {
     max-width: 1120px; 
   }
@@ -116,6 +130,8 @@ width: 240px;
   .brands-container__button {
     display: block;
   }
+
+  .swiper-pagination {display: none;}
 }
 
 
